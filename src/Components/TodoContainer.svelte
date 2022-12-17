@@ -1,7 +1,20 @@
-<script type="ts">
+<script lang="ts">
+  import { todos } from "../stores";
 </script>
 
-<div class="body" />
+<div class="body">
+  <button on:click={() => todos.add("test")}>add todo</button>
+  <button on:click={() => todos.add("test")}>remove todo</button>
+  <button on:click={() => todos.clearAll()}>clear</button>
+
+  <div>
+    {#each $todos as todo}
+      <div>
+        {todo.description}
+      </div>
+    {/each}
+  </div>
+</div>
 
 <style>
   .body {
