@@ -43,3 +43,5 @@ const createTodos = () => {
 };
 
 export const todos = createTodos();
+
+export const addTodoModalOpen = writable(false);
