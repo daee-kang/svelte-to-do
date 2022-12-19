@@ -14,6 +14,7 @@
     .app {
       width: 100vw;
       height: 100vh;
+      max-height: -webkit-fill-available;
       display: flex;
       flex-direction: column;
     }
