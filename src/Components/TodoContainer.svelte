@@ -3,10 +3,6 @@
 </script>
 
 <div class="body">
-  <button on:click={() => todos.add("test")}>add todo</button>
-  <button on:click={() => todos.add("test")}>remove todo</button>
-  <button on:click={() => todos.clearAll()}>clear</button>
-
   <div>
     {#each $todos as todo}
       <div>
