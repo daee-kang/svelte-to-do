@@ -51,6 +51,7 @@
     height: 100%;
     width: 100%;
     padding: 8px;
+    overflow: hidden;
   }
 
   .todo-body {

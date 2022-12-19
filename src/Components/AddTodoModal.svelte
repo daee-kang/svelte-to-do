@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
+  import { fade, fly } from "svelte/transition";
   import { addTodoModalOpen, todos } from "../stores";
 
   let todoDescription = "";
@@ -14,7 +14,11 @@
   };
 </script>
 
-<div class="modal-container" transition:fade={{ duration: 100 }}>
+<div
+  class="modal-container"
+  in:fly={{ x: -100, duration: 300 }}
+  out:fly={{ x: 100, duration: 300 }}
+>
   <div class="modal">
     <form on:submit|preventDefault={addTodo}>
       <input
