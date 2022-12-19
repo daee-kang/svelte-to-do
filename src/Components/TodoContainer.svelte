@@ -35,6 +35,15 @@
     margin-bottom: 1rem;
   }
 
+  @media only screen and (max-width: 600px) {
+    .body {
+      width: 100vw;
+      flex: 1;
+      height: undefined;
+      margin-bottom: 8px;
+    }
+  }
+
   .content {
     box-sizing: border-box;
     display: flex;

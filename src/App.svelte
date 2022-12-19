@@ -3,13 +3,21 @@
   import TodoContainer from "./Components/TodoContainer.svelte";
 </script>
 
-<main>
+<main class="app">
   <h1 class="title">todo list</h1>
   <TodoContainer />
   <Footer />
 </main>
 
 <style>
+  @media only screen and (max-width: 600px) {
+    .app {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .title {
     font-size: 2rem;
     margin: 0px;
