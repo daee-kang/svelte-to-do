@@ -16,7 +16,7 @@
         <div class="todos">
           <div>my todos:</div>
           {#each $todos as todo}
-            <div>{todo}</div>
+            <div>{todo.description}</div>
           {/each}
         </div>
       </BlurableDiv>
