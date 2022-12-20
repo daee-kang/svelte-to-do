@@ -10,6 +10,12 @@
 </main>
 
 <style>
+  .title {
+    font-size: 2rem;
+    margin: 0px;
+    color: #ffffff;
+    font-family: "Rubik Puddles", cursive;
+  }
   @media only screen and (max-width: 600px) {
     .app {
       width: 100vw;
@@ -18,10 +24,10 @@
       display: flex;
       flex-direction: column;
     }
-  }
-  .title {
-    font-size: 2rem;
-    margin: 0px;
-    color: #f5ebe0;
+
+    .title {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
   }
 </style>

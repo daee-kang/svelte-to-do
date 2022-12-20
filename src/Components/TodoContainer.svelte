@@ -31,8 +31,11 @@
   .body {
     height: 80vh;
     width: min(800px, 80vw);
-    background-color: #e3d5ca;
+    background-color: #e8edeb;
     margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -60,6 +63,6 @@
   }
 
   .todos {
-    color: #242424;
+    color: rgb(46, 52, 61);
   }
 </style>

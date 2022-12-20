@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap");
+
 *:focus {
   outline: none;
 }
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(46, 52, 61);
+  background-color: #2e343d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -59,7 +62,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #73aab3;
+  border-radius: 8px;
   cursor: pointer;
   transition: border-color 0.25s;
 }

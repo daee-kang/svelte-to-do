@@ -16,8 +16,8 @@
 
 <div
   class="modal-container"
-  in:fly={{ x: -100, duration: 300 }}
-  out:fly={{ x: 100, duration: 300 }}
+  in:fly={{ y: 100, duration: 300 }}
+  out:fly={{ y: 100, duration: 300 }}
 >
   <div class="modal">
     <form on:submit|preventDefault={addTodo}>
@@ -44,8 +44,11 @@
   .modal {
     height: fit-content;
     width: 90%;
-    background-color: #1a1a1a;
+    background-color: rgb(25, 27, 31);
     padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%),
+      0 1px 5px 0 rgb(0 0 0 / 12%);
   }
 
   .description-input {
@@ -54,7 +57,10 @@
     font-size: 60px;
     padding: 1rem 2rem;
     border: none;
+    border-radius: 8px;
     letter-spacing: 0.2rem;
+    background-color: #e8edeb;
+    color: rgb(25, 27, 31);
   }
 
   @media only screen and (max-width: 600px) {
